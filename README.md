@@ -79,21 +79,11 @@
 
 | 테이블명 | 활용 특성 (Features) |
 | --- | --- |
-| **내원정보** | 연령대(AGE_GROUP), 성별(SEX_CD), 등록번호(RGNO)
-
- |
-| **바탕질환** | ICD-10 코드(ICD10CD) 
-
- |
-| **생징후** | 항목명(IEM_NM), 항목내용(IEM_CONT)
-
- |
-| **검사결과** | 검체명(SPCM_NM), 부검사명(SEXAM_NM), 수치결과내용(NMVL_RSLT_CONT), 결과내용(RSLT_CONT)
-
- |
-| **배양검사결과** | 검체명(SPCM_NM), 세균명(GERM_NM), 항생제명(ANTBT_NM), 결과내용코드(RSLT_CONT_CD)
-| --- | --- |
-
+| **내원정보** | 연령대(AGE_GROUP), 성별(SEX_CD), 등록번호(RGNO) |
+| **바탕질환** | ICD-10 코드(ICD10CD) |
+| **생징후** | 항목명(IEM_NM), 항목내용(IEM_CONT) |
+| **검사결과** | 검체명(SPCM_NM), 부검사명(SEXAM_NM), 수치결과내용(NMVL_RSLT_CONT), 결과내용(RSLT_CONT) |
+| **배양검사결과** | 검체명(SPCM_NM), 세균명(GERM_NM), 항생제명(ANTBT_NM), 결과내용코드(RSLT_CONT_CD) |
 
 ---
 
