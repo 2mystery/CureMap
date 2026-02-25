@@ -63,9 +63,11 @@
 3. **Feature Engineering**
 * 모델 학습을 위해 불필요한 Target 컬럼(label)을 분리하고, 데이터를 학습용(Train)과 테스트용(Test)으로 분할 시 클래스 불균형을 고려하여 stratify=y 옵션을 적용
 
+
 4. **결측치 및 이상치 처리**
 
-5. *정규화 및 데이터 인코딩*
+
+5. **정규화 및 데이터 인코딩**
 * Positive / Negative / NaN 정규화
 * 범주형 데이터 인코딩
 
