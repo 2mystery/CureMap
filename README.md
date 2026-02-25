@@ -91,7 +91,7 @@
  |
 | **배양검사결과** | 검체명(SPCM_NM), 세균명(GERM_NM), 항생제명(ANTBT_NM), 결과내용코드(RSLT_CONT_CD)
 
- |
+
 
 ---
 
@@ -121,7 +121,7 @@
 * `subsample` 및 `colsample_bytree`: 과적합을 방지하기 위해 0.6 ~ 1.0 범위 탐색 
 
 
-* ']                                                                                                                                                                                                               `gamma`, `reg_alpha`, `reg_lambda`: 정규화 파라미터 적용으로 모델 일반화 성능 향상 
+* `gamma`,`reg_alpha`, `reg_lambda`: 정규화 파라미터 적용으로 모델 일반화 성능 향상 
 
 
 
