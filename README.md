@@ -16,9 +16,9 @@
 
 ---
 
-![서비스 화면 구성](./images/curemap.png)
-
 ## 💡 Project Overview(Service Flow)
+
+![서비스 화면 구성](./curemap.png)
 
 **CureMap**은 실제 의료 현장에서 의료진의 항생제 처방을 지원하기 위한 AI 기반의 **경험적 항생제 추천 및 예측 시뮬레이터**입니다.
 
@@ -41,7 +41,6 @@
 
 ---
 
----
 
 ## 🧩 AI / Data Analysis Overview (by 이신비)
 
@@ -104,32 +103,25 @@
 >
 > 
 
-* 
-**분류기 (Classifier):** `xgb.XGBClassifier` (`eval_metric='logloss'`, 범주형 데이터 처리를 위한 설정 포함) 
+* **분류기 (Classifier):** `xgb.XGBClassifier` (`eval_metric='logloss'`, 범주형 데이터 처리를 위한 설정 포함) 
 
 
-* 
-**하이퍼파라미터 튜닝 (Hyperparameter Search Space):** 
+* **하이퍼파라미터 튜닝 (Hyperparameter Search Space):** 
 
 
-* 
-`n_estimators`: [100, 200, 300] 
+* `n_estimators`: [100, 200, 300] 
 
 
-* 
-`max_depth`: [3, 4, 5, 6] 
+* `max_depth`: [3, 4, 5, 6] 
 
 
-* 
-`learning_rate`: [0.01, 0.05, 0.1] 
+* `learning_rate`: [0.01, 0.05, 0.1] 
 
 
-* 
-`subsample` 및 `colsample_bytree`: 과적합을 방지하기 위해 0.6 ~ 1.0 범위 탐색 
+* `subsample` 및 `colsample_bytree`: 과적합을 방지하기 위해 0.6 ~ 1.0 범위 탐색 
 
 
-* 
-`gamma`, `reg_alpha`, `reg_lambda`: 정규화 파라미터 적용으로 모델 일반화 성능 향상 
+* ']                                                                                                                                                                                                               `gamma`, `reg_alpha`, `reg_lambda`: 정규화 파라미터 적용으로 모델 일반화 성능 향상 
 
 
 
@@ -140,25 +132,20 @@
 ## 🛠️ Tech Stack
 
 * **Language:** Python 3.x
-* 
-**Libraries:** Pandas, Numpy, Scikit-learn, XGBoost, Matplotlib, Seaborn
+* **Libraries:** Pandas, Numpy, Scikit-learn, XGBoost, Matplotlib, Seaborn
 
-*
-**Training Strategy:** 불균형 데이터 처리, 감염 질환 그룹별 분류 전략 설계, Cross Validation 기반 일반화 성능 검증
+* **Training Strategy:** 불균형 데이터 처리, 감염 질환 그룹별 분류 전략 설계, Cross Validation 기반 일반화 성능 검증
 
-* 
-**Environment:** 폐쇄망 가상 서버 (Linux VM) 
+* **Environment:** 폐쇄망 가상 서버 (Linux VM) 
 
 cf. 이 프로젝트는 **병원에서 제공한 실제 의료 데이터**를 다루었기 때문에, 비식별화(SHA-256 암호화 등) 조치된 데이터를 **폐쇄망 가상 서버(VM) 환경**에서만 분석해야 했습니다.
 즉, 보안상의 이유로 AI 예측 서버와 백엔드/프론트엔드 웹 서비스를 **직접적으로 연결할 수 없는 제한된 환경**이었습니다. 따라서 저희 AI 팀은 주어진 폐쇄 환경 내에서 개별적으로 흩어져 있는 데이터 테이블들을 통합하여 **최적의 머신러닝 파이프라인을 구축**하고, 백엔드 로직에 예측 알고리즘 및 규칙을 전달하는 방식으로 역할을 분리하여 프로젝트를 진행했습니다.
 
-* 
-**Data Format:** CSV 분산 환경 데이터 
+* **Data Format:** CSV 분산 환경 데이터 
 
 
 ---
 
 
 ## 👤 Author
-**이신비(2mystery)**, 한국외국어대학교 컴퓨터공학부
-📧 2dltlsql@hufs.ac.kr
+**이신비(2mystery)**, 한국외국어대학교 컴퓨터공학부, 2dltlsql@hufs.ac.kr
